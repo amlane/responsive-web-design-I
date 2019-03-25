@@ -131,13 +131,11 @@ header .header-left {
 }
 
 .features {
-	display: inline-block;
-	width: 49.5%;
+	max-width: 49%;
 }
 
 .about {
-	display: inline-block;
-	width: 49.5%;
+	max-width: 49%;
 }
 
 .middle-container {
@@ -148,7 +146,8 @@ header .header-left {
 }
 
 .middle-img {
-	width: 100%;
+    width: 100%;
+    height: auto;
 }
 
 .bottom-container {
@@ -281,6 +280,45 @@ header .header-left {
 }
 
 @media(max-width: 500px){
+     body {
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+    nav .nav-items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-item {
+        padding: 20px 0;
+        border-bottom: .2px solid gray;
+        min-width: 100%;
+        color: silver;
+        letter-spacing: .2px;
+        font-size: 18px;
+    }
+
+    .nav-item:first-child {
+        border-top: .2px solid gray;
+        margin-top: -20px;
+    }
+
+    .main-header {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    header button {
+        border: 1px solid;
+        color: black;
+    }
+
+    .middle-container {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 5%;
+    }
 
 }
 
